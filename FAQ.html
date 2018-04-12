@@ -1,0 +1,388 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>FAQ page</title> 
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://sojournsolutions.com/wp-content/themes/html5blank/img/icons/favicon.ico" rel="shortcut icon">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+                <style> 
+                    body {
+                        background-color: #f3f3f3;
+                    }
+
+                    .header-container {
+                        background-color: #ffffff;
+                        padding: 15px 0;
+                    }
+
+                    #header {
+                        display:flex;
+                        max-width: 900px;
+                        margin: 0 auto;
+                        position: relative;
+                    }
+
+                    .contact_us_btn_container {
+                        display: flex;
+                        max-width: 900px;
+                        margin: 0 auto;
+                    }
+
+                    .contact_us_btn {
+                        margin: 10px 0 0 auto;
+                        color: #ec6e29;
+                        font-size: 20px;
+                        font-weight: 600;
+                        border: 2px solid #ec6e29;
+                        padding: 10px 15px;
+                        background: white;
+                    }
+
+                    .contact_us_btn:hover,
+                    .contact_us_btn:active,
+                    .contact_us_btn:focus {
+                        text-decoration: none;
+                        background: #ec6e29;
+                        color: white;
+                        outline: none;
+                    }
+
+                    .logo {
+                        margin-left: 0px;
+                        margin-right: 25px;
+                        width: 275px;
+                    }
+
+                    .logo img {
+                        margin-top: 5px;
+                    }
+
+                    input, textarea {
+                        border:1px solid #55545b;;
+                        box-sizing:border-box;
+                        -moz-box-sizing:border-box;
+                        -webkit-box-sizing:border-box;
+                        -ms-box-sizing:border-box;
+                        font-size:24px;
+                        line-height:1.5em;
+                        padding: 3px 10px;
+                        width:100%;
+                    }
+
+                    input {
+
+                    }
+
+                    .filterform {
+                        margin-right: 0;
+                        margin-left: auto;
+                        width: 100%;
+                        font-size:14px;
+                        display:inline-block;
+                    }
+                    .filterform input {
+                        border: 1px solid #666;
+                        margin: 0;
+                        outline: none;
+                        border-radius:5px;
+                        -moz-border-radius:5px;
+                        -webkit-border-radius:5px;
+                    }
+
+                    .search-icon {
+                        position: absolute;
+                        right:15px;
+                        top: 12px;
+                        color: #55545b;
+                    }
+
+                    .main-container {
+                        max-width: 900px;
+                        margin: 25px auto;
+                    }
+
+                    .mainHeader {
+                        text-transform: capitalize;
+                        font-size: 28px;
+                        font-weight: 400;
+                        color: #55545b;
+                    }
+
+                    .questionBox {
+                        padding: 15px 0;
+                        border-bottom: 1px solid #222;
+                        text-overflow: ellipsis;
+                    }
+
+                    .questionBox:last-child {
+                        border: none;
+                    }
+                    .question {
+                        font-size:20px;
+                        line-height: 20px;
+                        font-weight: bold;
+                        color:#ec6e29;
+                        text-transform: capitalize;
+                        text-decoration: none;
+                    }
+
+                    .question:hover,
+                    .question:active,
+                    .question:focus	{
+                        text-decoration: none;
+                        color:#ec6e29;
+                    }
+
+                    .field {
+                        font-weight:bold;
+                        color:#777;
+                    }
+
+                    .info {
+                        display: inline-grid;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #55545b;
+                        font-weight: 400;
+                        margin-top: 15px;
+                    }
+
+                    .video {
+                        display: inline-block;
+                        margin: 15px auto;
+                    }
+
+                    .modal {
+                        text-align: center;
+                        padding: 0!important;
+                    }
+
+                    .modal:before {
+                        content: '';
+                        display: inline-block;
+                        height: 100%;
+                        vertical-align: middle;
+                        margin-right: -4px;
+                    }
+
+                    .modal-dialog {
+                        display: inline-block;
+                        text-align: left;
+                        vertical-align: middle;
+                    }
+
+                    .modal-header {
+                        display: flex;
+                    }
+
+                    .modal-title {
+                        display: inline-block;
+                        color: #ec6e29;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+
+                    .close {
+                        margin-right: 0;
+                        margin-left:auto;
+                    }
+
+                    .close:hover {
+                        color: #ec6e29;
+                    }
+
+                    .message {
+                        margin-top: 15px;
+                        resize: none;
+                    }
+                    
+                    @media screen and (max-width: 920px) {
+                        .main-container {
+                            padding: 0 20px;
+                        }
+                        .question {
+                            font-size: 16px;
+                        }
+                    }
+                </style>
+                </head> 
+                <body> 
+                    <div id="wrapper">
+                        <div class="header-container">
+                            <div id="header"><div class="logo hidden-xs"><a href="https://sojournsolutions.com"><img src="https://sojournsolutions.com/wp-content/themes/html5blank/img/svg/sojourn-logo.svg" alt="Sojourn Solutions - logo"></a></div>
+                                <div class="search-icon"><i class="fa fa-search fa-lg"></i></div>
+                            </div>
+                            <div class="contact_us_btn_container">
+                                <button type="button" class="contact_us_btn" data-toggle="modal" data-target="#exampleModalCenter">
+                                    Ask a Question
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="modal-title" id="exampleModalLongTitle">Ask Us A Question</div>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="#">
+                                            <input class="inputEmail" name="emailAddress" id="emailAddress" type="email" placeholder="Email Address">
+                                                <textarea class="message" rows="4" placeholder="Your Question?"></textarea>
+                                                <input class="contact_us_btn" type="submit" value="Send">
+                                                    </form>
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <div class="main-container">
+                                                        <div class="mainHeader">frequently asked questions:</div>
+                                                        <div id="list">
+                                                            <div id="accordion">
+                                                                <div class="questionBox">
+                                                                    <a class="question" data-toggle="collapse" data-parent="#accordion" href="#collapse-1">How to start?</a>
+                                                                    <div id="collapse-1" class="panel-collapse collapse">
+                                                                        <div class="info">
+                                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                                            <div class="video">
+                                                                                <video width="560" controls>
+                                                                                    <source src="FAQ_placeholder_video.mp4" type="video/mp4">
+                                                                                        Your browser does not support HTML5 video.
+                                                                                </video>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="questionBox">
+                                                                    <a class="question" data-toggle="collapse" data-parent="#accordion" href="#collapse-2">How to set up Global Branding?</a>
+                                                                    <div id="collapse-2" class="panel-collapse collapse">
+                                                                        <div class="info">
+                                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="questionBox">
+                                                                    <a class="question" data-toggle="collapse" data-parent="#accordion" href="#collapse-3">How to change number of columns?</a>
+                                                                    <div id="collapse-3" class="panel-collapse collapse">
+                                                                        <div class="info">
+                                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="questionBox">
+                                                                    <a class="question" data-toggle="collapse" data-parent="#accordion" href="#collapse-4">How to add social icons?</a>
+                                                                    <div id="collapse-4" class="panel-collapse collapse">
+                                                                        <div class="info">
+                                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="questionBox">
+                                                                    <a class="question" data-toggle="collapse" data-parent="#accordion" href="#collapse-5">How to add lists?</a>
+                                                                    <div id="collapse-5" class="panel-collapse collapse">
+                                                                        <div class="info">
+                                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="questionBox">
+                                                                    <a class="question" data-toggle="collapse" data-parent="#accordion" href="#collapse-6">How to add link?</a>
+                                                                    <div id="collapse-6" class="panel-collapse collapse">
+                                                                        <div class="info">
+                                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="questionBox">
+                                                                    <a class="question" data-toggle="collapse" data-parent="#accordion" href="#collapse-7">How to create a template?</a>
+                                                                    <div id="collapse-7" class="panel-collapse collapse">
+                                                                        <div class="info">
+                                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="questionBox">
+                                                                    <a class="question" data-toggle="collapse" data-parent="#accordion" href="#collapse-8">How to add a shortcut?</a>
+                                                                    <div id="collapse-8" class="panel-collapse collapse">
+                                                                        <div class="info">
+                                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="questionBox">
+                                                                    <a class="question" data-toggle="collapse" data-parent="#accordion" href="#collapse-9">How to add Eloqua's field merge?</a>
+                                                                    <div id="collapse-9" class="panel-collapse collapse">
+                                                                        <div class="info">
+                                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="questionBox">
+                                                                    <a class="question" data-toggle="collapse" data-parent="#accordion" href="#collapse-10">How to change layout for mobiles?</a>
+                                                                    <div id="collapse-10" class="panel-collapse collapse">
+                                                                        <div class="info">
+                                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </div> 
+
+                                                    <script type="text/javascript" src="https://sojournsolutions.com/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+                                                    <!-- Latest compiled and minified JavaScript -->
+                                                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                                                    <script>
+
+                                                        (function ($) {
+                                                            jQuery.expr[':'].Contains = function (a, i, m) {
+                                                                return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase()) >= 0;
+                                                            };
+
+                                                            function listFilter(header, list) {
+                                                                var form = $("<form>").attr({"class": "filterform", "action": "#"}),
+                                                                        input = $("<input>").attr({"class": "filterinput", "type": "text", "placeholder": "Strat typing..."});
+                                                                $(form).append(input).appendTo(header);
+
+                                                                $(input)
+                                                                        .change(function () {
+                                                                            var filter = $(this).val();
+                                                                            if (filter) {
+                                                                                $(list).find(".question:not(:Contains(" + filter + "))").parent().slideUp();
+                                                                                $(list).find(".question:Contains(" + filter + ")").parent().slideDown();
+                                                                            } else {
+                                                                                $(list).find(".questionBox").slideDown();
+                                                                            }
+                                                                            return false;
+                                                                        })
+                                                                        .keyup(function () {
+                                                                            $(this).change();
+                                                                        });
+                                                            }
+
+                                                            $(function () {
+                                                                listFilter($("#header"), $("#list"));
+                                                            });
+                                                        }(jQuery));
+
+                                                    </script>
+                                                    </body> 
+                                                    </html> 
